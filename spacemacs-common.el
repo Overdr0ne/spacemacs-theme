@@ -193,7 +193,8 @@ to 'auto, tags may not be properly aligned. "
      `(fringe ((,class (:background ,bg1 :foreground ,base))))
      `(header-line ((,class :background ,bg2)))
      `(highlight ((,class (:foreground ,base :background ,highlight))))
-     `(hl-line ((,class (:background ,bg2 :extend t))))
+     ;; `(hl-line ((,class (:background ,bg2 :extend t))))
+     `(hl-line ((,class (:background ,blue-bg-s :extend t))))
      `(isearch ((,class (:foreground ,bg1 :background ,mat))))
      `(lazy-highlight ((,class (:background ,green-bg-s :weight normal))))
      `(link ((,class (:foreground ,comment :underline t))))
@@ -848,9 +849,9 @@ to 'auto, tags may not be properly aligned. "
      `(rcirc-url ((,class (:inherit link))))
 
 ;;;;; selectrum-mode
-     `(selectrum-current-candidate (:weight bold :background ,highlight))
-     `(selectrum-primary-highlight (:foreground ,head1))
-     `(selectrum-secondary-highlight (:foreground ,head3))
+     `(selectrum-current-candidate ((,class (:weight bold :background ,highlight))))
+     `(selectrum-primary-highlight ((,class (:foreground ,head1))))
+     `(selectrum-secondary-highlight ((,class (:foreground ,head3))))
 
 ;;;;; sh-mode
      `(sh-heredoc ((,class :foreground ,str)))
