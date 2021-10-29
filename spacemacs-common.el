@@ -848,9 +848,9 @@ to 'auto, tags may not be properly aligned. "
      `(rcirc-url ((,class (:inherit link))))
 
 ;;;;; selectrum-mode
-     `(selectrum-current-candidate :weight bold :background ,highlight)
-     `(selectrum-primary-highlight :foreground ,head1)
-     `(selectrum-secondary-highlight :foreground ,head3)
+     `(selectrum-current-candidate (:weight bold :background ,highlight))
+     `(selectrum-primary-highlight (:foreground ,head1))
+     `(selectrum-secondary-highlight (:foreground ,head3))
 
 ;;;;; sh-mode
      `(sh-heredoc ((,class :foreground ,str)))
